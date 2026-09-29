@@ -64,6 +64,7 @@ Enter your mark (between 0 and 100, or q to quit): SE
 invalid literal for int() with base 10: 'SE'
 
 Enter your mark (between 0 and 100, or q to quit): 108
+
 Mark must be between 0 and 100
 
 Enter your mark (between 0 and 100, or q to quit): -1
