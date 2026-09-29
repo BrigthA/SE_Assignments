@@ -21,8 +21,12 @@ _Validating the input type and accepting only integers between 0 and 100
 By using the try.. catch the exception and prompt the user to enter valid input 
 Use strip() to trim spaces from the input if the user is giving a string value._
 
+
+
 while True:
-    mark_input = input("\nEnter your mark (between 0 and 100, or q to quit): ").strip() #strip() removes any leading or trailing whitespace from the input
+
+    mark_input = input("\nEnter your mark (between 0 and 100, or q to quit): ").strip()     #strip() removes any leading or trailing whitespace from the input
+
     if mark_input.lower() == "q":
         break
 
