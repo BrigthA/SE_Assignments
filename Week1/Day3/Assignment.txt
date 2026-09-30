@@ -1,0 +1,64 @@
+
+Pyautogui
+==========
+1. Scenario
+You are working as an operations executive. Every morning you need to prepare a daily status
+report. Your task is to build a PyAutoGUI bot that prepares this report automatically by controlling
+the browser and a spreadsheet application, just like a person would - moving the mouse, clicking,
+typing, and copying data on screen. This is a medium-level automation assignment.
+Difficulty: Medium · Tools: PyAutoGUI, Chrome, Microsoft Excel (or Numbers on Mac)
+2. What your bot must do
+The bot should perform the following sequence on its own:
+• Open Chrome and go to any public website (for example: a weather, news, or stock-price site).
+• Copy the important piece of information from the page (the temperature, the top headline, or a
+stock value).
+• Open Microsoft Excel (or Numbers on Mac).
+• Create a new row containing three things: today's date & time, the fetched data, and your own
+short comment (for example, “Good for outdoor activities”).
+• Save the Excel file with today's date in the filename, e.g. daily_report_2025-06-17.xlsx.
+• Take a screenshot of the final Excel sheet and save it.
+Think it through
+PyAutoGUI controls the real mouse and keyboard, so timing and screen position matter. Think about
+how your bot waits for apps to open, how it makes sure the right window is focused, and what
+happens if something loads slower than expected. Plan the on-screen steps before you write them.
+3. Requirements
+• Use PyAutoGUI as the core automation library. You may add helper libraries you decide you
+need.
+• The date and time in the row must be generated automatically at run time - not typed by hand.
+• The saved filename must include the current date in the YYYY-MM-DD format.
+• The bot must save both the Excel file and a screenshot of the final sheet.
+• Keep all your code in a single file named daily_report_bot.py.
+
+
+Playwright Task
+=================
+1. Scenario
+You want to automate daily customer and business communication. Your task is to build a
+Playwright-powered WhatsApp Web Automation Bot that can send personalized messages to
+a list of contacts and also extract data back from chats. The bot drives a real browser through
+WhatsApp Web, just like a person would. This is a medium-level automation assignment.
+Title: WhatsApp Message Sender + Smart Data Extractor
+Difficulty: Medium · Tools: Playwright (Python), WhatsApp Web, Excel
+2. What your bot must do
+The bot should perform the following sequence:
+• Log in to WhatsApp Web (handle the QR code manually on the first run).
+• Read contacts from an Excel file named contacts.xlsx with columns: Name, Phone (with
+country code, e.g. +91xxxxxxxxxx), and Message (an optional template).
+• For each contact: search the contact or number, send a personalized message (replace {name}
+with the actual name), wait for the message to be sent, then take a screenshot of the sent
+message.
+• Smart data extraction (bonus core part): after sending, open a contact and extract the last 3
+messages from them.
+• Save everything in a report as both JSON and Excel.
+Think it through
+WhatsApp Web loads chats dynamically, so timing is everything. Plan where your bot needs to wait
+for elements to appear, how it confirms a message was actually sent, and how it behaves when a
+contact is not found. Sending too fast looks robotic and risks bans, so build in human-like pauses.
+3. Must implement
+• Proper waits using wait_for_selector and wait_for_timeout.
+• Search a contact by number or name.
+• Type and send a personalized message, handling the “Type a message” box reliably.
+• Add random delays (2-5 seconds) between actions to avoid bans.
+• Error handling (for example, contact not found) so the run does not crash.
+• Save the sent status for each contact in the report.
+• Keep all your code in a single file named playwright_assign.p
