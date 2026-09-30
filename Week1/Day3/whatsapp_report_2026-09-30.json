@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Bright",
+    "phone": "919566432705",
+    "message_number": 1,
+    "message": "Hello Bright, this is a test message from Playwright Bot.",
+    "status": "sent",
+    "error": ""
+  },
+  {
+    "name": "Bright",
+    "phone": "919566432705",
+    "message_number": 2,
+    "message": "Hello Bright, this is a test message from Playwright Bot.",
+    "status": "sent",
+    "error": ""
+  },
+  {
+    "name": "Bright",
+    "phone": "919566432705",
+    "message_number": 3,
+    "message": "Hello Bright, this is a test message from Playwright Bot.",
+    "status": "sent",
+    "error": ""
+  },
+  {
+    "name": "Brighta",
+    "phone": "918056902095",
+    "message_number": 1,
+    "message": "Hello Brighta, this is a test message from Playwright Bot.",
+    "status": "sent",
+    "error": ""
+  }
+]
