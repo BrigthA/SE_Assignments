@@ -1,1 +1,28 @@
 
+Assignment 
+
+Use the FastAPI framework to build the app.
+• Create a root endpoint GET / that returns a simple JSON response (for example, a welcome
+message).
+• Add at least one more endpoint that takes a value from the URL - either a path parameter (for
+example, /greet/{name}) or a query parameter - and returns it inside the response.
+• Run the app with the Uvicorn server and confirm it works in the browser.
+• Open the automatic interactive docs at /docs and check your endpoints there.
+
+Assignment2
+
+1. What you will build
+Build a Streamlit web app that asks the user to enter a mark (a number between 0 and 100) and
+then shows the matching letter grade. The app runs in the browser, so there is no terminal menu
+and no other framework. You will set up a clean Python environment, install Streamlit, write your
+code in a .py file, run it with streamlit run, and confirm it produces the correct output. Use
+Streamlit only - no other web framework or UI library.
+2. Grading scale to implement
+Your app must convert a mark into a grade using exactly this scale:
+Mark range Grade
+90 – 100 A
+80 – 89 B
+70 – 79 C
+60 – 69 D
+Below 60 E
+Note: the boundaries are inclusive - a mark of exactly 90 is an A, exactly 80 is a B, and so on.
